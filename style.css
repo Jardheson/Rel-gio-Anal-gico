@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+    background-image: url(Hora.jpg);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.relogio {
+  position: relative;
+  width: 90vw;
+  max-width: 400px;
+  aspect-ratio: 1 / 1;
+  margin: 2rem auto;
+  background: #333;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #0008;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.riscos {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0; left: 0;
+}
+
+.risco {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0; top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.ponto {
+  width: 0.7vw;
+  height: 2.5vw;
+  max-width: 6px;
+  max-height: 20px;
+  background: #fff;
+  border-radius: 2px;
+  margin-top: 2%;
+}
+
+.ponteiros {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  left: 5%;
+  top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform-origin: bottom center;
+  border-radius: 4px;
+}
+
+.p_s {
+  width: 2%;
+  height: 45%;
+  background: #e74c3c;
+  z-index: 3;
+}
+
+.p_m {
+  width: 3%;
+  height: 38%;
+  background: #fff;
+  z-index: 2;
+}
+
+.p_h {
+  width: 4%;
+  height: 28%;
+  background: #fff;
+  z-index: 1;
+}
+
+.encaixe {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 6%;
+  height: 6%;
+  background: #222;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+}
+
+.digital {
+  margin-top: 2rem;
+  font-size: 2.2rem;
+  letter-spacing: 0.2em;
+  text-align: center;
+  background: #111;
+  padding: 0.5em 1.5em;
+  border-radius: 1em;
+  box-shadow: 0 0 10px #0006;
+  width: fit-content;
+  min-width: 180px;
+}
+
+footer {    
+  margin-top: 20px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  opacity: 0.7;
+}
+
+@media (max-width: 500px) {
+  .relogio {
+    max-width: 95vw;
+  }
+  .digital {
+    font-size: 1.2rem;
+    min-width: 120px;
+    padding: 0.3em 0.7em;
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+}
